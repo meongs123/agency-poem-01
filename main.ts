@@ -31,7 +31,7 @@ const POEM = [
   '',
   'I took the hammer back and hung it',
   'by the door, where it always hung,',
-  'and drove one nail with it, crooked,',
+  'and drove one nail with it,',
   'into the fence he never finished.',
   '',
   'The nail bent. The fence held.',
