@@ -8,35 +8,42 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The Hammer — a son hands his dead father's workshop to an agent, which sorts
-// it perfectly, and takes back the one unsafe thing: the hammer whose taped
-// handle still holds the shape of his father's hand.
+// The Fence — a son hands his dead father's workshop to an agent, which sorts
+// it perfectly and offers to finish the nine-boards-short fence by Friday.
+// His living mother laughs and speaks the insight; he refuses the agent
+// face-to-face, puts up one board himself, and stands looking at the gap
+// the way his father did. Each April the agent asks, and each April his
+// mother comes out to the porch to hear him say: not yet.
 const POEM = [
-  'The Hammer',
+  'The Fence',
   '',
   'After my father died I gave the agent',
-  'his workshop: forty years of tools',
-  'in coffee tins, and said, sort them,',
-  'so I know what each one is for.',
+  'his workshop, forty years of tools',
+  'in coffee tins, and asked it to sort them',
+  "so I'd know what each one was for.",
   '',
   'It did. Every chisel named, every blade',
-  'oiled and hung in a row, the hammer',
-  'with the taped handle photographed',
-  'and filed under unsafe.',
+  'oiled, the hammer with the taped handle',
+  'photographed, filed under unsafe.',
+  'Then it walked the fence: nine boards short',
+  'since 1998. By morning it had three quotes.',
+  'Done by Friday, it said. Shall I?',
   '',
-  'The tape was where his hand had worn',
-  'the grip smooth. I peeled it back',
-  'and the wood underneath was darker,',
-  'the shape of his hand, still there.',
+  'My mother laughed from the porch.',
+  'He could have finished it in a weekend.',
+  'One board every spring, and after,',
+  "he'd stand there looking at the gap.",
+  "A man needs something he hasn't done yet.",
   '',
-  'I took the hammer back and hung it',
-  'by the door, where it always hung,',
-  'and drove one nail with it,',
-  'into the fence he never finished.',
+  'I said no to the agent.',
+  'I took the hammer from its hook,',
+  'the tape worn to the shape of his hand,',
+  'put up one board, and stood there after,',
+  'looking at the gap the way he did.',
   '',
-  'The nail bent. The fence held.',
-  'The agent can have the rest.',
-  'This one stays his.',
+  'Eight to go. The agent asks each April.',
+  'Each April my mother comes out to the porch',
+  'to hear me say: not yet.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
